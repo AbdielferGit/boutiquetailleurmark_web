@@ -1,0 +1,463 @@
+<!-- wp:html -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+body,p,li,a,.wp-block-paragraph,.wp-block-button__link{font-family:'Work Sans',Arial,sans-serif;}
+.wp-block-heading{font-family:'Spectral',Georgia,serif !important;font-weight:300 !important;letter-spacing:-0.01em !important;}
+h1.wp-block-heading{font-size:76px !important;line-height:1.05 !important;font-weight:200 !important;}
+h2.wp-block-heading{font-size:38px !important;line-height:1.15 !important;}
+h3.wp-block-heading{font-size:25px !important;line-height:1.25 !important;font-weight:400 !important;}
+@media (max-width:781px){h1.wp-block-heading{font-size:44px !important;}h2.wp-block-heading{font-size:28px !important;}h3.wp-block-heading{font-size:21px !important;}}
+</style>
+<!-- /wp:html -->
+
+<!-- wp:group {"align":"full","style":{"color":{"background":"#1E1E1E"},"spacing":{"padding":{"top":"120px","bottom":"120px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"760px"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#1E1E1E;padding-top:120px;padding-right:24px;padding-bottom:120px;padding-left:24px"><!-- wp:html -->
+<style>
+@keyframes markRotateDial{from{transform:translate(-50%,-50%) rotate(0deg);}to{transform:translate(-50%,-50%) rotate(360deg);}}
+@keyframes markTileIn{from{opacity:0;transform:translateY(22px) rotate(var(--tile-rot,0deg)) scale(0.96);}to{opacity:var(--tile-op,0.96);transform:translateY(0) rotate(var(--tile-rot,0deg)) scale(1);}}
+.mark-hero-dialwrap{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;}
+.mark-hero-dial{position:absolute;top:50%;left:50%;width:820px;height:820px;transform:translate(-50%,-50%);opacity:0.22;animation:markRotateDial 160s linear infinite;}
+.mark-hero-tiles{position:absolute;inset:0;z-index:6;overflow:visible;pointer-events:none;}
+.mark-hero-tile{position:absolute;width:138px;height:174px;object-fit:cover;filter:grayscale(8%) saturate(1.05) brightness(1.03);opacity:0;animation:markTileIn 1.4s cubic-bezier(.2,.8,.2,1) forwards;border:2px solid #F1E9D8;box-shadow:0 22px 46px rgba(0,0,0,0.6);will-change:transform;}
+.mark-tile-1{top:-30px;left:calc(50% - 328px);--tile-rot:-7deg;--tile-op:0.98;animation-delay:0.2s;}
+.mark-tile-2{top:-4px;left:calc(50% + 172px);--tile-rot:6deg;--tile-op:0.96;animation-delay:0.8s;}
+.mark-tile-3{top:150px;left:calc(50% - 400px);--tile-rot:4deg;--tile-op:0.94;animation-delay:1.4s;}
+.mark-tile-4{top:132px;left:calc(50% + 244px);--tile-rot:-5deg;--tile-op:0.97;animation-delay:2s;}
+@media (max-width:900px){.mark-hero-tile{display:none;}.mark-hero-dial{width:560px;height:560px;}}
+</style>
+<div class="mark-hero-dialwrap"><svg class="mark-hero-dial" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"><circle cx="200" cy="200" r="196" fill="none" stroke="#C9A96A" stroke-width="1"/><circle cx="200" cy="200" r="150" fill="none" stroke="#C9A96A" stroke-width="0.6"/><line x1="390.0" y1="200.0" x2="370.0" y2="200.0" stroke="#C9A96A" stroke-width="1.4"/><line x1="389.3" y1="216.6" x2="379.3" y2="215.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="387.1" y1="233.0" x2="377.3" y2="231.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="383.5" y1="249.2" x2="373.9" y2="246.6" stroke="#C9A96A" stroke-width="0.7"/><line x1="378.5" y1="265.0" x2="369.1" y2="261.6" stroke="#C9A96A" stroke-width="0.7"/><line x1="372.2" y1="280.3" x2="363.1" y2="276.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="364.5" y1="295.0" x2="347.2" y2="285.0" stroke="#C9A96A" stroke-width="1.4"/><line x1="355.6" y1="309.0" x2="347.4" y2="303.2" stroke="#C9A96A" stroke-width="0.7"/><line x1="345.5" y1="322.1" x2="337.9" y2="315.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="334.4" y1="334.4" x2="327.3" y2="327.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="322.1" y1="345.5" x2="315.7" y2="337.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="309.0" y1="355.6" x2="303.2" y2="347.4" stroke="#C9A96A" stroke-width="0.7"/><line x1="295.0" y1="364.5" x2="285.0" y2="347.2" stroke="#C9A96A" stroke-width="1.4"/><line x1="280.3" y1="372.2" x2="276.1" y2="363.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="265.0" y1="378.5" x2="261.6" y2="369.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="249.2" y1="383.5" x2="246.6" y2="373.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="233.0" y1="387.1" x2="231.3" y2="377.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="216.6" y1="389.3" x2="215.7" y2="379.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="200.0" y1="390.0" x2="200.0" y2="370.0" stroke="#C9A96A" stroke-width="1.4"/><line x1="183.4" y1="389.3" x2="184.3" y2="379.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="167.0" y1="387.1" x2="168.7" y2="377.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="150.8" y1="383.5" x2="153.4" y2="373.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="135.0" y1="378.5" x2="138.4" y2="369.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="119.7" y1="372.2" x2="123.9" y2="363.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="105.0" y1="364.5" x2="115.0" y2="347.2" stroke="#C9A96A" stroke-width="1.4"/><line x1="91.0" y1="355.6" x2="96.8" y2="347.4" stroke="#C9A96A" stroke-width="0.7"/><line x1="77.9" y1="345.5" x2="84.3" y2="337.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="65.6" y1="334.4" x2="72.7" y2="327.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="54.5" y1="322.1" x2="62.1" y2="315.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="44.4" y1="309.0" x2="52.6" y2="303.2" stroke="#C9A96A" stroke-width="0.7"/><line x1="35.5" y1="295.0" x2="52.8" y2="285.0" stroke="#C9A96A" stroke-width="1.4"/><line x1="27.8" y1="280.3" x2="36.9" y2="276.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="21.5" y1="265.0" x2="30.9" y2="261.6" stroke="#C9A96A" stroke-width="0.7"/><line x1="16.5" y1="249.2" x2="26.1" y2="246.6" stroke="#C9A96A" stroke-width="0.7"/><line x1="12.9" y1="233.0" x2="22.7" y2="231.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="10.7" y1="216.6" x2="20.7" y2="215.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="10.0" y1="200.0" x2="30.0" y2="200.0" stroke="#C9A96A" stroke-width="1.4"/><line x1="10.7" y1="183.4" x2="20.7" y2="184.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="12.9" y1="167.0" x2="22.7" y2="168.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="16.5" y1="150.8" x2="26.1" y2="153.4" stroke="#C9A96A" stroke-width="0.7"/><line x1="21.5" y1="135.0" x2="30.9" y2="138.4" stroke="#C9A96A" stroke-width="0.7"/><line x1="27.8" y1="119.7" x2="36.9" y2="123.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="35.5" y1="105.0" x2="52.8" y2="115.0" stroke="#C9A96A" stroke-width="1.4"/><line x1="44.4" y1="91.0" x2="52.6" y2="96.8" stroke="#C9A96A" stroke-width="0.7"/><line x1="54.5" y1="77.9" x2="62.1" y2="84.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="65.6" y1="65.6" x2="72.7" y2="72.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="77.9" y1="54.5" x2="84.3" y2="62.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="91.0" y1="44.4" x2="96.8" y2="52.6" stroke="#C9A96A" stroke-width="0.7"/><line x1="105.0" y1="35.5" x2="115.0" y2="52.8" stroke="#C9A96A" stroke-width="1.4"/><line x1="119.7" y1="27.8" x2="123.9" y2="36.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="135.0" y1="21.5" x2="138.4" y2="30.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="150.8" y1="16.5" x2="153.4" y2="26.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="167.0" y1="12.9" x2="168.7" y2="22.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="183.4" y1="10.7" x2="184.3" y2="20.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="200.0" y1="10.0" x2="200.0" y2="30.0" stroke="#C9A96A" stroke-width="1.4"/><line x1="216.6" y1="10.7" x2="215.7" y2="20.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="233.0" y1="12.9" x2="231.3" y2="22.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="249.2" y1="16.5" x2="246.6" y2="26.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="265.0" y1="21.5" x2="261.6" y2="30.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="280.3" y1="27.8" x2="276.1" y2="36.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="295.0" y1="35.5" x2="285.0" y2="52.8" stroke="#C9A96A" stroke-width="1.4"/><line x1="309.0" y1="44.4" x2="303.2" y2="52.6" stroke="#C9A96A" stroke-width="0.7"/><line x1="322.1" y1="54.5" x2="315.7" y2="62.1" stroke="#C9A96A" stroke-width="0.7"/><line x1="334.4" y1="65.6" x2="327.3" y2="72.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="345.5" y1="77.9" x2="337.9" y2="84.3" stroke="#C9A96A" stroke-width="0.7"/><line x1="355.6" y1="91.0" x2="347.4" y2="96.8" stroke="#C9A96A" stroke-width="0.7"/><line x1="364.5" y1="105.0" x2="347.2" y2="115.0" stroke="#C9A96A" stroke-width="1.4"/><line x1="372.2" y1="119.7" x2="363.1" y2="123.9" stroke="#C9A96A" stroke-width="0.7"/><line x1="378.5" y1="135.0" x2="369.1" y2="138.4" stroke="#C9A96A" stroke-width="0.7"/><line x1="383.5" y1="150.8" x2="373.9" y2="153.4" stroke="#C9A96A" stroke-width="0.7"/><line x1="387.1" y1="167.0" x2="377.3" y2="168.7" stroke="#C9A96A" stroke-width="0.7"/><line x1="389.3" y1="183.4" x2="379.3" y2="184.3" stroke="#C9A96A" stroke-width="0.7"/></svg></div>
+<div class="mark-hero-tiles">
+<img class="mark-hero-tile mark-tile-1" data-speed="0.55" src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Alteration-costume-homme-boucherville.jpg" alt=""/>
+<img class="mark-hero-tile mark-tile-2" data-speed="0.85" src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Pret-a-porter-haut-de-gamme.jpg" alt=""/>
+<img class="mark-hero-tile mark-tile-3" data-speed="0.68" src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Tailleur-Boucherville.jpg" alt=""/>
+<img class="mark-hero-tile mark-tile-4" data-speed="0.95" src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Reparation-habit-homme.jpg" alt=""/>
+</div>
+<script>
+(function(){
+  var tiles = Array.prototype.slice.call(document.querySelectorAll('.mark-hero-tile'));
+  var ticking = false;
+  function update(){
+    var y = window.scrollY || window.pageYOffset || 0;
+    tiles.forEach(function(t){
+      var speed = parseFloat(t.getAttribute('data-speed')) || 0.5;
+      var rot = getComputedStyle(t).getPropertyValue('--tile-rot') || '0deg';
+      var travel = y * speed;
+      var fade = Math.max(0, 1 - y / 420);
+      t.style.transform = 'translateY(' + travel.toFixed(1) + 'px) rotate(' + rot.trim() + ') scale(' + (1 - Math.min(y,420)/420*0.12).toFixed(3) + ')';
+      t.style.opacity = fade.toString();
+    });
+    ticking = false;
+  }
+  update();
+  window.addEventListener('scroll', function(){
+    if(!ticking){ window.requestAnimationFrame(update); ticking = true; }
+  }, {passive:true});
+})();
+</script>
+<!-- /wp:html -->
+
+<!-- wp:paragraph {"style":{"color":{"text":"#C9A96A"},"typography":{"fontSize":"14px","letterSpacing":"2px"}}} -->
+<p class="has-text-color has-text-align-center" style="text-align:center;color:#9C7A3C;font-size:20px;letter-spacing:1.5px;font-family:'Spectral',Georgia,serif;font-style:italic;font-weight:300;position:relative;z-index:10;text-shadow:0 2px 12px rgba(0,0,0,0.55)">L'Atelier Privé</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div style="text-align:center;"><img src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Boutique-tailleur-Mark-logo.png" alt="Sceau Boutique Tailleur Mark 109" style="width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid #C9A96A;display:inline-block;margin:0 0 20px 0;background:#F1E9D8;padding:6px;box-sizing:border-box;"/></div>
+<!-- /wp:html -->
+
+<!-- wp:heading {"level":1,"style":{"color":{"text":"#F1E9D8"},"typography":{"fontSize":"48px"}}} -->
+<h1 class="wp-block-heading has-text-color" style="color:#F1E9D8;font-size:48px">Boutique Tailleur Mark 109</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"color":{"text":"#DFD6C1"},"typography":{"fontSize":"20px"}}} -->
+<p class="has-text-color" style="color:#DFD6C1;font-size:20px">Sur rendez-vous uniquement. Haute couture, retouches fines et conseil de style, à Boucherville.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"style":{"color":{"background":"#9C7A3C","text":"#F1E9D8"},"border":{"radius":"2px"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-background wp-element-button" href="#rendez-vous" style="border-radius:2px;color:#F1E9D8;background-color:#9C7A3C">Prendre rendez-vous</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div style="width:100%;overflow:hidden;line-height:0;background:#F1E9D8;">
+<svg viewBox="0 0 300 18" preserveAspectRatio="none" style="width:100%;height:18px;display:block;">
+<path d="M0,9 Q7.5,1 15,9 T30,9 T45,9 T60,9 T75,9 T90,9 T105,9 T120,9 T135,9 T150,9 T165,9 T180,9 T195,9 T210,9 T225,9 T240,9 T255,9 T270,9 T285,9 T300,9" fill="none" stroke="#9C7A3C" stroke-width="1.3"/>
+</svg>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"48px","bottom":"48px","left":"24px","right":"24px"}},"color":{"background":"#F1E9D8"}},"layout":{"type":"constrained","contentSize":"760px"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#F1E9D8;padding-top:48px;padding-right:24px;padding-bottom:48px;padding-left:24px"><!-- wp:paragraph {"align":"center","className":"has-text-align-center","style":{"typography":{"fontStyle":"italic","fontSize":"16px","textAlign":"center"},"color":{"text":"#4A463F"}}} -->
+<p class="has-text-align-center has-text-color" style="color:#4A463F;font-size:16px;font-style:italic">Site de démonstration — proposition de repositionnement présentée à titre d'exemple, non affiliée au site actuel de l'atelier.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"color":{"background":"#F1E9D8"},"spacing":{"padding":{"top":"80px","bottom":"64px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"700px"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#F1E9D8;padding-top:80px;padding-right:24px;padding-bottom:64px;padding-left:24px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"22px","textAlign":"center"},"color":{"text":"#1E1E1E"}}} -->
+<p class="has-text-align-center has-text-color" style="color:#1E1E1E;font-size:22px">Le même savoir-faire qui sert depuis plus de 30 ans une clientèle exigeante — présenté enfin comme l'expérience privée qu'il a toujours été.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div style="background-color:#F1E9D8;width:100%;margin:0 0 32px 0;overflow:hidden;"><img src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Couturier-sur-mesure.jpg" alt="Atelier Mark 109" style="width:100%;height:520px;object-fit:cover;display:block;filter:grayscale(12%) contrast(1.05);"/></div>
+<!-- /wp:html -->
+
+<!-- wp:group {"align":"full","style":{"color":{"background":"#F1E9D8"},"spacing":{"padding":{"top":"24px","bottom":"96px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#F1E9D8;padding-top:24px;padding-right:24px;padding-bottom:96px;padding-left:24px">
+<!-- wp:paragraph {"style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"13px","letterSpacing":"2px","textAlign":"center"}}} -->
+<p class="has-text-align-center has-text-color" style="color:#9C7A3C;font-size:16px;letter-spacing:2px">NOS GAMMES</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"style":{"typography":{"textAlign":"center"}}} -->
+<h2 class="wp-block-heading has-text-align-center">Trois façons de vivre l'atelier</h2>
+<!-- /wp:heading -->
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"24px","left":"24px"}}}} -->
+<div class="wp-block-columns">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"style":{"color":{"background":"#E4DAC4"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"28px","right":"28px"}}}} -->
+<div class="wp-block-group" style="background-color:#E4DAC4;padding-top:32px;padding-right:28px;padding-bottom:32px;padding-left:28px">
+<!-- wp:paragraph {"style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"13px","letterSpacing":"1px"}}} -->
+<p style="color:#9C7A3C;font-size:19px;font-family:'Spectral',Georgia,serif;font-style:italic;font-weight:300">Essentiel</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">À partir de 45 $</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Retouches courantes — ourlets, ajustements simples, toujours encadrés par une consultation.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"style":{"color":{"background":"#1E1E1E"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"28px","right":"28px"}}}} -->
+<div class="wp-block-group" style="background-color:#1E1E1E;padding-top:32px;padding-right:28px;padding-bottom:32px;padding-left:28px">
+<!-- wp:paragraph {"style":{"color":{"text":"#C9A96A"},"typography":{"fontSize":"13px","letterSpacing":"1px"}}} -->
+<p style="color:#9C7A3C;font-size:19px;font-family:'Spectral',Georgia,serif;font-style:italic;font-weight:300">Signature</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"color":{"text":"#F1E9D8"}}} -->
+<h3 class="wp-block-heading" style="color:#F1E9D8">À partir de 185 $</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#D0C7B2"}}} -->
+<p style="color:#D0C7B2">Retouches de pièces fines — tissus délicats, cuir, soie, pièces de créateurs.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"style":{"color":{"background":"#E4DAC4"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"28px","right":"28px"}}}} -->
+<div class="wp-block-group" style="background-color:#E4DAC4;padding-top:32px;padding-right:28px;padding-bottom:32px;padding-left:28px">
+<!-- wp:paragraph {"style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"13px","letterSpacing":"1px"}}} -->
+<p style="color:#9C7A3C;font-size:19px;font-family:'Spectral',Georgia,serif;font-style:italic;font-weight:300">Sur-mesure intégral</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">À partir de 1 800 $</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Création complète, du choix du tissu à la livraison — l'expérience signature de l'atelier.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"italic","fontSize":"13px","textAlign":"center"},"color":{"text":"#4A463F"}}} -->
+<p class="has-text-align-center has-text-color" style="color:#4A463F;font-size:13px;font-style:italic">Tarifs indicatifs — confirmés lors de la consultation privée.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"color":{"background":"#1E1E1E"},"spacing":{"padding":{"top":"96px","bottom":"96px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"760px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#1E1E1E;padding-top:96px;padding-right:24px;padding-bottom:96px;padding-left:24px">
+<!-- wp:paragraph {"style":{"color":{"text":"#C9A96A"},"typography":{"fontSize":"13px","letterSpacing":"2px"}}} -->
+<p style="color:#9C7A3C;font-size:16px;letter-spacing:2px">DISPONIBILITÉ</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":2,"style":{"color":{"text":"#F1E9D8"}}} -->
+<h2 class="wp-block-heading" style="color:#F1E9D8">Deux jours par semaine. Une seule consultation par jour.</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#DFD6C1"},"typography":{"fontSize":"17px"}}} -->
+<p style="color:#DFD6C1;font-size:17px">L'atelier reçoit sur rendez-vous uniquement, le mardi et le vendredi, à raison d'une seule consultation privée par jour. Le reste de la semaine est entièrement consacré au travail déjà confié par nos clients — c'est ce qui garantit la précision et le respect des délais de chaque pièce.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"color":{"background":"#F1E9D8"},"spacing":{"padding":{"top":"96px","bottom":"64px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#F1E9D8;padding-top:96px;padding-right:24px;padding-bottom:64px;padding-left:24px">
+<!-- wp:paragraph {"style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"13px","letterSpacing":"2px","textAlign":"center"}}} -->
+<p class="has-text-align-center has-text-color" style="color:#9C7A3C;font-size:16px;letter-spacing:2px">LA BOUTIQUE</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"style":{"typography":{"textAlign":"center"}}} -->
+<h2 class="wp-block-heading has-text-align-center">Nos pièces, présentées ici — vendues en atelier</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#4A463F"},"typography":{"textAlign":"center"}}} -->
+<p class="has-text-align-center has-text-color" style="color:#4A463F">Les pièces ci-dessous se vendent exclusivement en boutique. Vous pouvez toutefois les réserver en ligne dès maintenant, avec une date de retrait et les ajustements nécessaires inclus.</p>
+<!-- /wp:paragraph -->
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"24px","left":"24px"}}}} -->
+<div class="wp-block-columns">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"style":{"color":{"background":"#E4DAC4"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"}}}} -->
+<div class="wp-block-group" style="background-color:#E4DAC4;padding-top:28px;padding-right:24px;padding-bottom:28px;padding-left:24px">
+<!-- wp:html -->
+<div style="width:100%;margin:0 0 32px 0;overflow:hidden;"><img src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Tailleur-pour-homme-sur-mesure.jpg" alt="Complet trois pièces" style="width:100%;height:260px;object-fit:cover;display:block;filter:grayscale(12%) contrast(1.05);"/></div>
+<!-- /wp:html -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px"}}} -->
+<h3 class="wp-block-heading" style="font-size:18px">Complet trois pièces</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#4A463F"}}} -->
+<p style="color:#4A463F">Laine italienne, coupe européenne. Ajustements inclus au retrait.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button {"style":{"border":{"width":"1px","radius":"2px"},"color":{"background":"#E4DAC4","text":"#1E1E1E"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#rendez-vous" style="border-radius:2px;border-width:1px;border-color:#1E1E1E;color:#1E1E1E;background-color:#E4DAC4">Réserver ce modèle</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"style":{"color":{"background":"#E4DAC4"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"}}}} -->
+<div class="wp-block-group" style="background-color:#E4DAC4;padding-top:28px;padding-right:24px;padding-bottom:28px;padding-left:24px">
+<!-- wp:html -->
+<div style="width:100%;margin:0 0 32px 0;overflow:hidden;"><img src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Tailleur-habit-boucherville.jpg" alt="Chemise sur mesure" style="width:100%;height:260px;object-fit:cover;display:block;filter:grayscale(12%) contrast(1.05);"/></div>
+<!-- /wp:html -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px"}}} -->
+<h3 class="wp-block-heading" style="font-size:18px">Chemise sur mesure</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#4A463F"}}} -->
+<p style="color:#4A463F">Coton égyptien, col au choix. Retouche de manche offerte.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button {"style":{"border":{"width":"1px","radius":"2px"},"color":{"background":"#E4DAC4","text":"#1E1E1E"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#rendez-vous" style="border-radius:2px;border-width:1px;border-color:#1E1E1E;color:#1E1E1E;background-color:#E4DAC4">Réserver ce modèle</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"style":{"color":{"background":"#E4DAC4"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"24px","right":"24px"}}}} -->
+<div class="wp-block-group" style="background-color:#E4DAC4;padding-top:28px;padding-right:24px;padding-bottom:28px;padding-left:24px">
+<!-- wp:html -->
+<div style="width:100%;margin:0 0 32px 0;overflow:hidden;"><img src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Alteration-costume-homme-boucherville.jpg" alt="Accessoires" style="width:100%;height:260px;object-fit:cover;display:block;filter:grayscale(12%) contrast(1.05);"/></div>
+<!-- /wp:html -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px"}}} -->
+<h3 class="wp-block-heading" style="font-size:18px">Accessoires</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#4A463F"}}} -->
+<p style="color:#4A463F">Cravates, pochettes et boutons de manchette assortis.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button {"style":{"border":{"width":"1px","radius":"2px"},"color":{"background":"#E4DAC4","text":"#1E1E1E"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#rendez-vous" style="border-radius:2px;border-width:1px;border-color:#1E1E1E;color:#1E1E1E;background-color:#E4DAC4">Réserver ce modèle</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"color":{"background":"#F1E9D8"},"spacing":{"padding":{"top":"96px","bottom":"96px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"900px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#F1E9D8;padding-top:96px;padding-right:24px;padding-bottom:96px;padding-left:24px">
+<!-- wp:paragraph {"style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"13px","letterSpacing":"2px"}}} -->
+<p style="color:#9C7A3C;font-size:16px;letter-spacing:2px">CONSEIL DE STYLE</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Une image complète, pas seulement un vêtement</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"17px"},"color":{"text":"#3a3a3a"}}} -->
+<p style="color:#3a3a3a;font-size:17px">Au-delà de la couture, l'atelier propose des séances de conseil en image, sur rendez-vous, pour définir un style qui vous ressemble.</p>
+<!-- /wp:paragraph -->
+<!-- wp:list {"style":{"typography":{"fontSize":"16px"}}} -->
+<ul style="font-size:16px">
+<!-- wp:list-item -->
+<li>Analyse morphologique et de silhouette</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Garde-robe capsule personnalisée</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Tenues prédéterminées pour vos événements (outfits clé en main)</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Direction de style et accompagnement lors d'achats</li>
+<!-- /wp:list-item -->
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div style="background-color:#F1E9D8;width:100%;margin:0 0 32px 0;overflow:hidden;"><img src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Tailleur-Boucherville.jpg" alt="Conseil de style Mark 109" style="width:100%;height:380px;object-fit:cover;display:block;filter:grayscale(12%) contrast(1.05);"/></div>
+<!-- /wp:html -->
+
+<!-- wp:group {"align":"full","anchor":"rendez-vous","style":{"color":{"background":"#1E1E1E"},"spacing":{"padding":{"top":"96px","bottom":"96px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"700px"}} -->
+<div class="wp-block-group alignfull" id="rendez-vous" style="background-color:#1E1E1E;padding-top:96px;padding-right:24px;padding-bottom:96px;padding-left:24px">
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#C9A96A"},"typography":{"fontSize":"13px","letterSpacing":"2px"}}} -->
+<p class="has-text-align-center" style="color:#9C7A3C;font-size:16px;letter-spacing:2px">RENDEZ-VOUS</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":2,"textAlign":"center","style":{"color":{"text":"#F1E9D8"}}} -->
+<h2 class="wp-block-heading has-text-align-center" style="color:#F1E9D8">Réserver votre consultation</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#DFD6C1"}}} -->
+<p class="has-text-align-center" style="color:#DFD6C1">Mardi et vendredi, une consultation privée par jour. Places limitées — nous vous recommandons de réserver plusieurs semaines à l'avance.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons">
+<!-- wp:button {"style":{"color":{"background":"#9C7A3C","text":"#F1E9D8"},"border":{"radius":"2px"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="mailto:info@boutiquetailleurmark.ca" style="border-radius:2px;color:#F1E9D8;background-color:#9C7A3C">Réserver par courriel</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"style":{"color":{"background":"#1E1E1E","text":"#F1E9D8"},"border":{"width":"1px","radius":"2px","color":"#F1E9D8"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="tel:4509061718" style="border-radius:2px;border-width:1px;border-color:#F1E9D8;color:#F1E9D8;background-color:#1E1E1E">450 906-1718</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"italic","fontSize":"13px"},"color":{"text":"#8A8A8A"}}} -->
+<p class="has-text-align-center" style="color:#8A8A8A;font-style:italic;font-size:13px">Note démo : un calendrier de réservation en ligne (type Calendly ou Amelia) remplacerait ces boutons sur le site final.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"color":{"background":"#F1E9D8"},"spacing":{"padding":{"top":"96px","bottom":"96px","left":"24px","right":"24px"}}},"layout":{"type":"constrained","contentSize":"1100px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#F1E9D8;padding-top:96px;padding-right:24px;padding-bottom:96px;padding-left:24px">
+<!-- wp:paragraph {"style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"13px","letterSpacing":"2px","textAlign":"center"}}} -->
+<p class="has-text-align-center has-text-color" style="color:#9C7A3C;font-size:16px;letter-spacing:2px">CONSEILS DE SAISON</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"style":{"typography":{"textAlign":"center"}}} -->
+<h2 class="wp-block-heading has-text-align-center">Nos recommandations évoluent avec les saisons</h2>
+<!-- /wp:heading -->
+<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"24px","left":"24px"}}}} -->
+<div class="wp-block-columns">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"style":{"border":{"width":"1px","color":"#D0C7B2"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}}}} -->
+<div class="wp-block-group" style="border-color:#D0C7B2;border-width:1px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph {"style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"12px","letterSpacing":"1px"}}} -->
+<p style="color:#9C7A3C;font-size:16px;letter-spacing:1px">ÉTÉ 2026</p>
+<!-- /wp:paragraph -->
+<!-- wp:html -->
+<div style="width:100%;margin:0 0 32px 0;overflow:hidden;"><img src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Pret-a-porter-haut-de-gamme.jpg" alt="Lin, lin, lin" style="width:100%;height:260px;object-fit:cover;display:block;filter:grayscale(12%) contrast(1.05);"/></div>
+<!-- /wp:html -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"17px"}}} -->
+<h3 class="wp-block-heading" style="font-size:17px">Lin, lin, lin</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#4A463F"}}} -->
+<p style="color:#4A463F">Le complet en lin non doublé, allié idéal des grandes chaleurs de Montréal.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"style":{"border":{"width":"1px","color":"#D0C7B2"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}}}} -->
+<div class="wp-block-group" style="border-color:#D0C7B2;border-width:1px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph {"style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"12px","letterSpacing":"1px"}}} -->
+<p style="color:#9C7A3C;font-size:16px;letter-spacing:1px">AUTOMNE 2026</p>
+<!-- /wp:paragraph -->
+<!-- wp:html -->
+<div style="width:100%;margin:0 0 32px 0;overflow:hidden;"><img src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Tailleur-sur-mesure.jpg" alt="Retour à la flanelle" style="width:100%;height:260px;object-fit:cover;display:block;filter:grayscale(12%) contrast(1.05);"/></div>
+<!-- /wp:html -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"17px"}}} -->
+<h3 class="wp-block-heading" style="font-size:17px">Retour à la flanelle</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#4A463F"}}} -->
+<p style="color:#4A463F">Textures chaudes et tons terreux pour la rentrée professionnelle.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:group {"style":{"border":{"width":"1px","color":"#D0C7B2"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}}}} -->
+<div class="wp-block-group" style="border-color:#D0C7B2;border-width:1px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph {"style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"12px","letterSpacing":"1px"}}} -->
+<p style="color:#9C7A3C;font-size:16px;letter-spacing:1px">HIVER 2026</p>
+<!-- /wp:paragraph -->
+<!-- wp:html -->
+<div style="width:100%;margin:0 0 32px 0;overflow:hidden;"><img src="https://rwg.qjk.mybluehost.me/website_29b0508f/wp-content/uploads/2026/08/Reparation-habit-homme.jpg" alt="Le manteau qui dure" style="width:100%;height:260px;object-fit:cover;display:block;filter:grayscale(12%) contrast(1.05);"/></div>
+<!-- /wp:html -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"17px"}}} -->
+<h3 class="wp-block-heading" style="font-size:17px">Le manteau qui dure</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#4A463F"}}} -->
+<p style="color:#4A463F">Investir dans un manteau d'hiver sur mesure, pièce pour dix ans.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"italic","fontSize":"13px","textAlign":"center"},"color":{"text":"#4A463F"}}} -->
+<p class="has-text-align-center has-text-color" style="color:#4A463F;font-size:13px;font-style:italic">Cette section serait mise à jour à chaque changement de saison via le blogue.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"96px","bottom":"96px","left":"24px","right":"24px"}},"color":{"background":"#E4DAC4"}},"layout":{"type":"constrained","contentSize":"900px"}} -->
+<div class="wp-block-group alignfull" style="background-color:#E4DAC4;padding-top:96px;padding-right:24px;padding-bottom:96px;padding-left:24px">
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#9C7A3C"},"typography":{"fontSize":"13px","letterSpacing":"2px"}}} -->
+<p class="has-text-align-center" style="color:#9C7A3C;font-size:16px;letter-spacing:2px">APERÇU — ASSISTANT VIRTUEL</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":2,"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Un assistant qui connaît l'atelier</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#4A463F"}}} -->
+<p class="has-text-align-center" style="color:#4A463F">Aperçu de ce que ferait un assistant virtuel intégré au site : vérifier les disponibilités, conseiller sur les couleurs et répondre sur les produits.</p>
+<!-- /wp:paragraph -->
+<!-- wp:group {"style":{"color":{"background":"#F1E9D8"},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"28px","right":"28px"}},"border":{"radius":"16px"}}} -->
+<div class="wp-block-group" style="background-color:#F1E9D8;border-radius:16px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px;max-width:520px;margin-left:auto;margin-right:auto;box-shadow:0 8px 30px rgba(0,0,0,0.08)">
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"13px"},"color":{"text":"#8A8A8A"}}} -->
+<p style="color:#8A8A8A;font-size:13px">Assistant Mark 109 · en ligne</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"color":{"background":"#E4DAC4","text":"#1E1E1E"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"16px","right":"16px"},"margin":{"bottom":"12px","top":"8px"}},"border":{"radius":"14px"}}} -->
+<p style="background-color:#E4DAC4;color:#1E1E1E;border-radius:14px;padding-top:12px;padding-right:16px;padding-bottom:12px;padding-left:16px;margin-top:8px;margin-bottom:12px;width:fit-content;max-width:80%">Bonjour ! Je peux vérifier les disponibilités, vous conseiller sur les couleurs ou vous renseigner sur nos pièces. Que puis-je faire pour vous ?</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"right","style":{"color":{"background":"#9C7A3C","text":"#F1E9D8"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"16px","right":"16px"},"margin":{"bottom":"12px"}},"border":{"radius":"14px"}}} -->
+<p class="has-text-align-right" style="background-color:#9C7A3C;color:#F1E9D8;border-radius:14px;padding-top:12px;padding-right:16px;padding-bottom:12px;padding-left:16px;margin-bottom:12px;width:fit-content;max-width:80%;margin-left:auto">Avez-vous une place vendredi pour un ajustement ?</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"color":{"background":"#E4DAC4","text":"#1E1E1E"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"16px","right":"16px"},"margin":{"bottom":"12px"}},"border":{"radius":"14px"}}} -->
+<p style="background-color:#E4DAC4;color:#1E1E1E;border-radius:14px;padding-top:12px;padding-right:16px;padding-bottom:12px;padding-left:16px;margin-bottom:12px;width:fit-content;max-width:80%">Oui — il reste une consultation vendredi à 14 h. Voulez-vous que je la réserve pour vous ?</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"right","style":{"color":{"background":"#9C7A3C","text":"#F1E9D8"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"16px","right":"16px"},"margin":{"bottom":"12px"}},"border":{"radius":"14px"}}} -->
+<p class="has-text-align-right" style="background-color:#9C7A3C;color:#F1E9D8;border-radius:14px;padding-top:12px;padding-right:16px;padding-bottom:12px;padding-left:16px;margin-bottom:12px;width:fit-content;max-width:80%;margin-left:auto">Parfait. Aussi, quelle couleur de cravate avec un complet bleu marine ?</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"color":{"background":"#E4DAC4","text":"#1E1E1E"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"16px","right":"16px"},"margin":{"bottom":"12px"}},"border":{"radius":"14px"}}} -->
+<p style="background-color:#E4DAC4;color:#1E1E1E;border-radius:14px;padding-top:12px;padding-right:16px;padding-bottom:12px;padding-left:16px;margin-bottom:12px;width:fit-content;max-width:80%">Le bordeaux ou le vert forêt fonctionnent très bien avec le bleu marine. Pour un look plus sobre, un bourgogne uni reste une valeur sûre.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"align":"right","style":{"color":{"background":"#9C7A3C","text":"#F1E9D8"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"16px","right":"16px"},"margin":{"bottom":"12px"}},"border":{"radius":"14px"}}} -->
+<p class="has-text-align-right" style="background-color:#9C7A3C;color:#F1E9D8;border-radius:14px;padding-top:12px;padding-right:16px;padding-bottom:12px;padding-left:16px;margin-bottom:12px;width:fit-content;max-width:80%;margin-left:auto">Avez-vous encore le complet trois pièces en laine italienne ?</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph {"style":{"color":{"background":"#E4DAC4","text":"#1E1E1E"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"16px","right":"16px"}},"border":{"radius":"14px"}}} -->
+<p style="background-color:#E4DAC4;color:#1E1E1E;border-radius:14px;padding-top:12px;padding-right:16px;padding-bottom:12px;padding-left:16px;width:fit-content;max-width:80%">Oui, disponible en boutique. Je peux vous le réserver avec une date de retrait — souhaitez-vous que je m'en occupe ?</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"italic","fontSize":"13px"},"color":{"text":"#8A8A8A"}}} -->
+<p class="has-text-align-center" style="color:#8A8A8A;font-style:italic;font-size:13px">Conversation illustrative — cet assistant n'est pas encore fonctionnel sur ce site de démonstration.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->

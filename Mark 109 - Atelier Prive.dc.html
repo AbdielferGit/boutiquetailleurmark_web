@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; background:#14120f; }
+  a { color:#9C7A3C; text-decoration:none; }
+  a:hover { color:#C9A96A; }
+</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+  <section data-label="Titre" data-screen-label="01" data-speaker-notes="Ouverture. Poser le cadre : ce n'est pas une refonte de site, c'est un repositionnement d'atelier." style="background:#1E1E1E; color:#F1E9D8; font-family:'Spectral',Georgia,serif; display:grid; grid-template-columns:1fr 660px;">
+    <div style="display:flex; flex-direction:column; justify-content:space-between; padding:96px 110px 72px 120px;">
+      <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:600; letter-spacing:0.34em; text-transform:uppercase; color:#C9A96A;">Boutique Tailleur Mark 109</div>
+      <div style="display:flex; flex-direction:column; gap:44px;">
+        <div style="display:flex; flex-direction:column; gap:7px;">
+          <div style="height:1px; background:#9C7A3C;"></div>
+          <div style="height:3px; background:#9C7A3C; width:120px;"></div>
+        </div>
+        <h1 style="margin:0; font-weight:200; font-size:132px; line-height:0.94; letter-spacing:-0.02em; color:#F1E9D8;">L’Atelier<br><span style="font-style:italic; font-weight:300;">Privé</span></h1>
+        <p style="margin:0; max-width:620px; font-family:'Work Sans',sans-serif; font-size:27px; font-weight:300; line-height:1.6; color:#C7C7C7; text-wrap:pretty;">Proposition stratégique de positionnement et de croissance</p>
+      </div>
+      <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:400; letter-spacing:0.2em; text-transform:uppercase; color:#8A8A8A;">15 août 2026</div>
+    </div>
+    <div style="position:relative; overflow:hidden;">
+      <img src="assets/tailleur-sur-mesure.jpg" alt="" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.35) brightness(0.78) contrast(1.05);">
+      <div style="position:absolute; inset:0; background:linear-gradient(90deg,#1E1E1E 0%,rgba(30,30,30,0.35) 32%,rgba(30,30,30,0.1) 100%);"></div>
+    </div>
+  </section>
+
+  <section data-label="Constat — base solide" data-screen-label="02" data-speaker-notes="Insister : ces actifs ne s'achètent pas. Ils sont déjà là." style="background:#F1E9D8; color:#1E1E1E; font-family:'Spectral',Georgia,serif; display:flex; flex-direction:column; padding:88px 120px 64px;">
+    <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:600; letter-spacing:0.34em; text-transform:uppercase; color:#9C7A3C;">Constat</div>
+    <h2 style="margin:22px 0 0; font-weight:300; font-size:76px; line-height:1.05; letter-spacing:-0.015em; max-width:1100px;">Une base solide, <span style="font-style:italic;">sous-exploitée</span></h2>
+    <div style="height:1px; background:#C9A96A; margin:52px 0 0;"></div>
+    <div style="flex:1; display:grid; grid-template-columns:400px 1fr; gap:80px; padding-top:56px;">
+      <div style="display:flex; flex-direction:column; gap:18px;">
+        <div style="font-weight:200; font-size:200px; line-height:0.82; letter-spacing:-0.04em; color:#9C7A3C;">30<span style="font-size:96px; vertical-align:super; line-height:1;">+</span></div>
+        <div style="font-family:'Work Sans',sans-serif; font-size:25px; font-weight:300; line-height:1.5; color:#3A3A3A; max-width:330px;">années d’expertise en couture et en altération</div>
+      </div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:52px 72px; align-content:start;">
+        <div style="display:flex; flex-direction:column; gap:14px; border-top:1px solid #D0C7B2; padding-top:22px;">
+          <div style="font-size:34px; font-weight:400;">Clientèle établie</div>
+          <div style="font-family:'Work Sans',sans-serif; font-size:25px; font-weight:300; line-height:1.6; color:#4A463F; text-wrap:pretty;">Des noms reconnus du monde de la mode font déjà appel à l’atelier.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; border-top:1px solid #D0C7B2; padding-top:22px;">
+          <div style="font-size:34px; font-weight:400;">Spécialisation rare</div>
+          <div style="font-family:'Work Sans',sans-serif; font-size:25px; font-weight:300; line-height:1.6; color:#4A463F; text-wrap:pretty;">Maîtrise des tissus délicats : suède, cuir, soie.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; border-top:1px solid #D0C7B2; padding-top:22px;">
+          <div style="font-size:34px; font-weight:400;">Offre à trois volets</div>
+          <div style="font-family:'Work Sans',sans-serif; font-size:25px; font-weight:300; line-height:1.6; color:#4A463F; text-wrap:pretty;">Sur-mesure, altérations fines et boutique haut de gamme, déjà en place.</div>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:14px; border-top:1px solid #D0C7B2; padding-top:22px;">
+          <div style="font-size:34px; font-weight:400;">Faible concurrence directe</div>
+          <div style="font-family:'Work Sans',sans-serif; font-size:25px; font-weight:300; line-height:1.6; color:#4A463F; text-wrap:pretty;">Peu d’ateliers positionnés haut de gamme sur la Rive-Sud.</div>
+        </div>
+      </div>
+    </div>
+    <sc-if value="{{ showFooter }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; font-family:'Work Sans',sans-serif; font-size:20px; letter-spacing:0.24em; text-transform:uppercase; color:#8A8A8A; border-top:1px solid #D8D0BC; padding-top:20px;">
+        <span>Boutique Tailleur Mark 109</span><span>{{ n02 }}</span>
+      </div>
+    </sc-if>
+  </section>
+
+  <section data-label="Benchmark" data-screen-label="03" data-speaker-notes="Aucune de ces maisons ne vend au comptoir. Toutes filtrent par rendez-vous." style="background:#F1E9D8; color:#1E1E1E; font-family:'Spectral',Georgia,serif; display:flex; flex-direction:column; padding:88px 120px 64px;">
+    <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:600; letter-spacing:0.34em; text-transform:uppercase; color:#9C7A3C;">Benchmark</div>
+    <h2 style="margin:22px 0 0; font-weight:300; font-size:60px; line-height:1.08; letter-spacing:-0.015em; max-width:1300px;">Comment se positionnent les ateliers de référence à Montréal</h2>
+    <div style="flex:1; display:grid; grid-template-columns:280px repeat(4,1fr); column-gap:44px; align-content:space-between; padding-top:54px; font-family:'Work Sans',sans-serif;">
+      <div></div>
+      <div style="border-bottom:3px solid #9C7A3C; padding-bottom:16px; font-family:'Spectral',serif; font-size:29px; color:#1E1E1E;">Mark 109 <span style="font-size:19px; color:#8A8A8A;">(actuel)</span></div>
+      <div style="border-bottom:1px solid #C9A96A; padding-bottom:16px; font-family:'Spectral',serif; font-size:29px; color:#3A3A3A;">Maison Cloakroom</div>
+      <div style="border-bottom:1px solid #C9A96A; padding-bottom:16px; font-family:'Spectral',serif; font-size:29px; color:#3A3A3A;">Tailleur Prestige</div>
+      <div style="border-bottom:1px solid #C9A96A; padding-bottom:16px; font-family:'Spectral',serif; font-size:29px; color:#3A3A3A;">Sartorialto</div>
+
+      <div style="padding:38px 0 34px; font-size:24px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#9C7A3C; border-bottom:1px solid #DFD6C1;">Prise de contact</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:400; color:#1E1E1E; border-bottom:1px solid #DFD6C1;">Formulaire générique</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F; border-bottom:1px solid #DFD6C1;">Réservation en ligne</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F; border-bottom:1px solid #DFD6C1;">« Réserver ma consultation »</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F; border-bottom:1px solid #DFD6C1;">Sur rendez-vous uniquement</div>
+
+      <div style="padding:38px 0 34px; font-size:24px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#9C7A3C; border-bottom:1px solid #DFD6C1;">Prix visibles</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:400; color:#1E1E1E; border-bottom:1px solid #DFD6C1;">Aucun</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F; border-bottom:1px solid #DFD6C1;">3 paliers dès 1 695 $</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F; border-bottom:1px solid #DFD6C1;">Sur devis</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F; border-bottom:1px solid #DFD6C1;">Non affiché</div>
+
+      <div style="padding:38px 0 34px; font-size:24px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#9C7A3C; border-bottom:1px solid #DFD6C1;">Instagram</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:400; color:#1E1E1E; border-bottom:1px solid #DFD6C1;">Absent</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F; border-bottom:1px solid #DFD6C1;">Actif, fort</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F; border-bottom:1px solid #DFD6C1;">Actif</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F; border-bottom:1px solid #DFD6C1;">Discret</div>
+
+      <div style="padding:38px 0 34px; font-size:24px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#9C7A3C;">Preuve sociale</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:400; color:#1E1E1E;">Non exploitée</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F;">Contenu visuel riche</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F;">Note Google 4,8/5 affichée</div>
+      <div style="padding:38px 0 34px; font-size:25px; font-weight:300; color:#4A463F;">Bouche-à-oreille</div>
+    </div>
+    <p style="margin:0 0 34px; max-width:1400px; font-family:'Work Sans',sans-serif; font-size:25px; font-weight:300; line-height:1.6; color:#4A463F; text-wrap:pretty;">Aucune de ces maisons ne vend au comptoir : toutes filtrent leur clientèle par un rendez-vous, toutes affichent au moins un repère de prix, toutes misent sur Instagram comme vitrine principale.</p>
+    <sc-if value="{{ showFooter }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; font-family:'Work Sans',sans-serif; font-size:20px; letter-spacing:0.24em; text-transform:uppercase; color:#8A8A8A; border-top:1px solid #D8D0BC; padding-top:20px;">
+        <span>Boutique Tailleur Mark 109</span><span>{{ n03 }}</span>
+      </div>
+    </sc-if>
+  </section>
+
+  <section data-label="La vision" data-screen-label="04" data-speaker-notes="Le métier ne change pas. Le cadre change." style="background:#1E1E1E; color:#F1E9D8; font-family:'Spectral',Georgia,serif; position:relative; display:flex; align-items:center;">
+    <img src="assets/couturier-sur-mesure.jpg" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:grayscale(0.55) brightness(0.42) contrast(1.08);">
+    <div style="position:absolute; inset:0; background:linear-gradient(100deg,rgba(20,18,15,0.94) 0%,rgba(20,18,15,0.72) 52%,rgba(20,18,15,0.42) 100%);"></div>
+    <div style="position:relative; padding:0 120px; display:flex; flex-direction:column; gap:40px; max-width:1280px;">
+      <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:600; letter-spacing:0.34em; text-transform:uppercase; color:#C9A96A;">La vision</div>
+      <h2 style="margin:0; font-weight:200; font-size:92px; line-height:1.04; letter-spacing:-0.02em;">Le même savoir-faire.<br><span style="font-style:italic; font-weight:300; color:#C9A96A;">Un cadre à sa hauteur.</span></h2>
+      <div style="height:1px; background:#9C7A3C; width:200px;"></div>
+      <p style="margin:0; max-width:900px; font-family:'Work Sans',sans-serif; font-size:26px; font-weight:300; line-height:1.68; color:#D8D0BC; text-wrap:pretty;">Le repositionnement ne change pas le métier : il change le cadre. Sur-mesure, retouches fines et conseils de style sont présentés non plus comme un service de quartier, mais comme une expérience privée — réservée à une clientèle qui recherche précision, discrétion et exclusivité.</p>
+    </div>
+    <sc-if value="{{ showFooter }}" hint-placeholder-val="{{ true }}">
+      <div style="position:absolute; left:120px; right:120px; bottom:64px; display:flex; justify-content:space-between; align-items:baseline; font-family:'Work Sans',sans-serif; font-size:20px; letter-spacing:0.24em; text-transform:uppercase; color:#9A9A9A; border-top:1px solid rgba(201,169,106,0.35); padding-top:20px;">
+        <span>Boutique Tailleur Mark 109</span><span>{{ n04 }}</span>
+      </div>
+    </sc-if>
+  </section>
+
+  <section data-label="Pilier 2 — segmentation" data-screen-label="05" data-speaker-notes="Trois lignes distinctes, chacune avec sa promesse et son client cible." style="background:#F1E9D8; color:#1E1E1E; font-family:'Spectral',Georgia,serif; display:flex; flex-direction:column; padding:88px 120px 64px;">
+    <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:600; letter-spacing:0.34em; text-transform:uppercase; color:#9C7A3C;">Pilier 2</div>
+    <h2 style="margin:22px 0 0; font-weight:300; font-size:72px; line-height:1.06; letter-spacing:-0.015em;">La segmentation de <span style="font-style:italic;">l’offre</span></h2>
+    <div style="flex:1; display:grid; grid-template-columns:repeat(3,1fr); gap:56px; padding-top:60px; align-content:start;">
+      <div style="display:flex; flex-direction:column; gap:26px;">
+        <div style="height:280px; overflow:hidden; background:#E4DAC4;">
+          <img src="assets/tailleur-homme-sur-mesure.jpg" alt="" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.3) contrast(1.03);">
+        </div>
+        <div style="display:flex; flex-direction:column; gap:16px; border-top:3px solid #9C7A3C; padding-top:24px;">
+          <div style="font-size:38px; font-weight:400; line-height:1.15;">Sur-mesure haute couture</div>
+          <div style="font-family:'Work Sans',sans-serif; font-size:25px; font-weight:300; line-height:1.6; color:#4A463F; text-wrap:pretty;">Création complète, du choix du tissu à la dernière retouche — l’expérience signature.</div>
+          <div style="display:flex; flex-direction:column; gap:7px; margin-top:10px;">
+            <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:600; letter-spacing:0.24em; text-transform:uppercase; color:#9C7A3C;">Client cible</div>
+            <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:300; line-height:1.5; color:#3A3A3A;">Occasions marquantes, garde-robe professionnelle</div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:26px;">
+        <div style="height:280px; overflow:hidden; background:#E4DAC4;">
+          <img src="assets/alteration-costume.jpg" alt="" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.3) contrast(1.03);">
+        </div>
+        <div style="display:flex; flex-direction:column; gap:16px; border-top:1px solid #C9A96A; padding-top:24px;">
+          <div style="font-size:38px; font-weight:400; line-height:1.15;">Retouches de pièces fines</div>
+          <div style="font-family:'Work Sans',sans-serif; font-size:25px; font-weight:300; line-height:1.6; color:#4A463F; text-wrap:pretty;">Expertise réservée aux tissus délicats et aux pièces de créateurs.</div>
+          <div style="display:flex; flex-direction:column; gap:7px; margin-top:10px;">
+            <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:600; letter-spacing:0.24em; text-transform:uppercase; color:#9C7A3C;">Client cible</div>
+            <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:300; line-height:1.5; color:#3A3A3A;">Propriétaires de vêtements de luxe déjà acquis ailleurs</div>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:26px;">
+        <div style="height:280px; overflow:hidden; background:#E4DAC4;">
+          <img src="assets/pret-a-porter.jpg" alt="" style="width:100%; height:100%; object-fit:cover; filter:grayscale(0.3) contrast(1.03);">
+        </div>
+        <div style="display:flex; flex-direction:column; gap:16px; border-top:1px solid #C9A96A; padding-top:24px;">
+          <div style="font-size:38px; font-weight:400; line-height:1.15;">Boutique curatée</div>
+          <div style="font-family:'Work Sans',sans-serif; font-size:25px; font-weight:300; line-height:1.6; color:#4A463F; text-wrap:pretty;">Sélection restreinte de prêt-à-porter haut de gamme, ajustée sur place.</div>
+          <div style="display:flex; flex-direction:column; gap:7px; margin-top:10px;">
+            <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:600; letter-spacing:0.24em; text-transform:uppercase; color:#9C7A3C;">Client cible</div>
+            <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:300; line-height:1.5; color:#3A3A3A;">Point d’entrée vers la clientèle du sur-mesure</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <sc-if value="{{ showFooter }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; font-family:'Work Sans',sans-serif; font-size:20px; letter-spacing:0.24em; text-transform:uppercase; color:#8A8A8A; border-top:1px solid #D8D0BC; padding-top:20px;">
+        <span>Boutique Tailleur Mark 109</span><span>{{ n05 }}</span>
+      </div>
+    </sc-if>
+  </section>
+
+  <section data-label="Prochaines étapes" data-screen-label="06" data-speaker-notes="Demander la rencontre de 45 à 60 minutes." style="background:#1E1E1E; color:#F1E9D8; font-family:'Spectral',Georgia,serif; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:0 220px; position:relative;">
+    <div style="font-family:'Work Sans',sans-serif; font-size:24px; font-weight:600; letter-spacing:0.34em; text-transform:uppercase; color:#C9A96A;">Prochaines étapes</div>
+    <h2 style="margin:38px 0 0; font-weight:200; font-size:104px; line-height:1.04; letter-spacing:-0.02em;">Validons la vision <span style="font-style:italic; font-weight:300;">ensemble.</span></h2>
+    <div style="display:flex; flex-direction:column; gap:7px; width:220px; margin:52px 0;">
+      <div style="height:1px; background:#9C7A3C;"></div>
+      <div style="height:3px; background:#9C7A3C;"></div>
+    </div>
+    <p style="margin:0; max-width:1000px; font-family:'Work Sans',sans-serif; font-size:26px; font-weight:300; line-height:1.68; color:#C7C7C7; text-wrap:pretty;">Une rencontre de 45 à 60 minutes pour valider le repositionnement, prioriser les actions des 90 premiers jours et convenir d’un calendrier de mise en œuvre réaliste.</p>
+    <sc-if value="{{ showFooter }}" hint-placeholder-val="{{ true }}">
+      <div style="position:absolute; left:120px; right:120px; bottom:64px; display:flex; justify-content:space-between; align-items:baseline; font-family:'Work Sans',sans-serif; font-size:20px; letter-spacing:0.24em; text-transform:uppercase; color:#8A8A8A; border-top:1px solid rgba(201,169,106,0.3); padding-top:20px;">
+        <span>Boutique Tailleur Mark 109</span><span>{{ n06 }}</span>
+      </div>
+    </sc-if>
+  </section>
+
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showFooter&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;numerals&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Romains&quot;,&quot;Arabes&quot;],&quot;default&quot;:&quot;Romains&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const roman = ['','I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII'];
+    const style = this.props.numerals ?? 'Romains';
+    const fmt = n => style === 'Romains' ? roman[n] : String(n).padStart(2, '0');
+    const vals = { showFooter: this.props.showFooter ?? true };
+    for (let i = 2; i <= 6; i++) vals['n0' + i] = fmt(i);
+    return vals;
+  }
+}
+</script>
+</body>
+</html>
