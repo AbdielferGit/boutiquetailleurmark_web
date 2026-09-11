@@ -7,10 +7,10 @@
   "scripts": {
     "generate": "node src/generate-post.js"
   },
-  "dependencies": {
-    "@anthropic-ai/sdk": "^0.32.0",
-    "dotenv": "^16.4.5"
+  "engines": {
+    "node": ">=18"
   },
+  "dependencies": {},
   "license": "UNLICENSED",
   "private": true
 }
