@@ -3,21 +3,8 @@ const fs = require("fs");
 const path = require("path");
 const brand = require("../config/brand");
 const { loadImageAsBase64 } = require("./utils/image");
+const { loadPrompt } = require("./utils/template");
 const { askClaudeWithImage, MODEL } = require("./claude-client");
-
-function fillTemplate(template, data) {
-  return template.replace(/\{\{(.*?)\}\}/g, (_, expr) => {
-    const parts = expr.trim().split(".");
-    let value = data;
-    for (const part of parts) value = value == null ? undefined : value[part];
-    return value == null ? "" : value;
-  });
-}
-
-function loadPrompt(name) {
-  const raw = fs.readFileSync(path.join(__dirname, "..", "prompts", `${name}.md`), "utf8");
-  return fillTemplate(raw, { brand });
-}
 
 function parseAdJson(raw) {
   let text = raw.trim();
@@ -40,11 +27,15 @@ function escapeHtml(str) {
     .replace(/"/g, "&quot;");
 }
 
+async function generateAdCopyFromImage(image, description) {
+  const userText = `Description fournie par l'atelier : "${description}"\n\nRedige le contenu demande dans le systeme, en te basant uniquement sur la photo et cette description.`;
+  const raw = await askClaudeWithImage({ system: loadPrompt("ad", { brand }), userText, image });
+  return parseAdJson(raw);
+}
+
 async function generateAdCopy(imagePath, description) {
   const image = loadImageAsBase64(imagePath);
-  const userText = `Description fournie par l'atelier : "${description}"\n\nRedige le contenu demande dans le systeme, en te basant uniquement sur la photo et cette description.`;
-  const raw = await askClaudeWithImage({ system: loadPrompt("ad"), userText, image });
-  const copy = parseAdJson(raw);
+  const copy = await generateAdCopyFromImage(image, description);
   return { copy, image };
 }
 
@@ -229,4 +220,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { generateAdCopy, renderAdHtml };
+module.exports = { generateAdCopy, generateAdCopyFromImage, renderAdHtml, parseAdJson };

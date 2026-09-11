@@ -24,11 +24,17 @@ node src/generate-post.js ../assets/tailleur-sur-mesure.jpg "Complet trois piece
 ```
 Un exemple de resultat attendu se trouve dans `examples/sample-output.json`.
 
-## Utilisation -- publicite animee
+## Utilisation -- publicite animee (avec description manuelle)
 ```bash
 node src/generate-ad.js ../assets/tailleur-sur-mesure.jpg "Complet trois pieces en laine italienne, coupe europeenne"
 ```
 Cree un fichier `output/ad-<horodatage>.html` : une page autonome, format vertical (style story/reel), a ouvrir directement dans un navigateur. La photo fournie s'anime en zoom lent (Ken Burns), le texte (accroche, titre, sous-titre) apparait en fondu, puis un bouton dore "{{brand.bookingCTA}}" apparait a la fin et pointe vers `{{brand.website}}/#rendez-vous` -- prêt a etre integre a une campagne publicitaire (Meta/TikTok Ads) ou partage tel quel. Cliquer n'importe ou dans le cadre (sauf sur le bouton) rejoue l'animation.
+
+## Utilisation -- publicite animee automatique (une seule entree : la photo)
+```bash
+node src/create-ad.js ../assets/tailleur-sur-mesure.jpg
+```
+Tache unique qui ne recoit que la photo : Claude regarde l'image, redige lui-meme une description factuelle du vetement, puis genere le texte publicitaire et la publicite animee a partir de cette description -- sans avoir a taper quoi que ce soit d'autre. Meme resultat que `generate-ad.js` (HTML + JSON dans `output/`, bouton vers la page de rendez-vous), mais entierement automatique.
 
 ## Structure
 ```
@@ -37,9 +43,11 @@ ai-content-agent/
 |-- prompts/              -- instructions envoyees a Claude (modifiables sans toucher au code)
 |-- src/
 |   |-- generate-post.js  -- publications Facebook/TikTok (JSON)
-|   |-- generate-ad.js    -- publicite animee (HTML + JSON)
+|   |-- generate-ad.js    -- publicite animee, description fournie manuellement (HTML + JSON)
+|   |-- create-ad.js      -- publicite animee 100% automatique -- ne recoit que la photo
 |   |-- claude-client.js  -- appel API Claude (fetch natif, sans SDK)
-|   `-- utils/image.js    -- chargement des photos en base64
+|   |-- utils/image.js    -- chargement des photos en base64
+|   `-- utils/template.js -- chargement/remplacement des prompts (partage entre les scripts)
 |-- publish/              -- feuille de route pour la publication automatique (voir publish/README.md)
 |-- examples/             -- exemple de resultat attendu
 `-- output/               -- resultats generes (ignore par git)

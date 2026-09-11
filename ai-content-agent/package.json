@@ -5,7 +5,9 @@
   "main": "src/generate-post.js",
   "type": "commonjs",
   "scripts": {
-    "generate": "node src/generate-post.js"
+    "generate": "node src/generate-post.js",
+    "generate-ad": "node src/generate-ad.js",
+    "create-ad": "node src/create-ad.js"
   },
   "engines": {
     "node": ">=18"
